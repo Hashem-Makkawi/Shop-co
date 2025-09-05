@@ -1,0 +1,58 @@
+
+.notification {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-block: 10px;
+  font-weight: 400;
+  font-size: 14px;
+
+}
+
+.notification .signUp{
+  position: relative;
+  font-weight: 500;
+}
+
+.notification .signUp:after{
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  left: 0;
+  bottom: 0;
+  margin-bottom: -3px;
+  transition: .3s;
+}
+
+.notification img{
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-right: 100px;
+  margin-top: 15px;
+  width: 13px;
+  cursor: pointer;
+}
+
+.notification .signUp:hover::after{
+  width: 0;
+  transition: .3s;
+}
+
+@media (max-width:600px) {
+  .notification{
+    padding-bottom: 6px;
+    font-size: 12px;
+  }
+  .notification img{
+    margin-top: 11px;
+  }
+}
+
+@media (max-width : 550px){
+  .notification img {
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+.title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.piece .image{
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    transition: .3s;
+}
+
+.piece{
+    min-width: 200px;
+}
+
+.piece:hover .image{
+    filter: brightness(.8);
+    transition: .3s;
+}
+@media(max-width: 720px){
+    .title{
+        font-size: 1rem;
+    }
+
+}

@@ -1,0 +1,362 @@
+.homeSection{
+    position: relative;
+    background-color: #f2f0f1;
+    background-position-x: -90px;
+    background-image: url(../../assets/homeBackground.svg);
+    width: 100%;
+    padding-bottom: 116px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.bigStar {
+    position: absolute;
+    right: 100px;
+    top: 100px;
+}
+
+.smallStar {
+    position: absolute;
+    top: 340px;
+    right: 700px;
+}
+
+
+.welcome {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 560px;
+    margin-left: 100px;
+    padding-top: 100px;
+    margin-bottom: 48px;
+    
+}
+.welcome h1{
+    font-size: 64px;
+    line-height: 1.1;
+    color: black;
+    font-family: "Integral";
+}
+
+.welcome p{
+    color: rgba(0, 0, 0, 0.666);
+
+}
+
+.welcome button{
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    font-weight: 400;
+    padding: 15px 67.5px;
+    border: none;
+    width: 210px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 1rem;
+}
+
+.welcome button:hover{
+    background-color: white;
+    color: black;
+    transition: .3s;
+}
+
+.benifits{
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.benifit{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.benifit span:nth-child(1){
+    font-size: 40px;
+    font-family: "Satoshi";
+    font-weight: 700;
+    color: black;
+}
+
+.benifit span:nth-child(2){
+    color: rgba(0, 0, 0, 0.666);
+}
+
+.homeBack{
+    display: none;
+}
+
+
+@media (max-width : 1300px){
+    .welcome{
+        padding-top: 50px;
+        margin-left: 50px;
+        margin-bottom: 20px;
+    }
+
+    .benifits{
+        margin-left: 50px;
+    }
+
+    .smallStar{
+        right: 600px;
+    }
+    .bigStar{
+        right: 500px;
+    }
+}
+
+@media (max-width : 1235px){
+    .welcome h1{
+        font-size: 45px;
+    }
+    .smallStar{
+        top: 270px;
+    }
+
+    .bigStar{
+        right: 100px;
+    }
+}
+
+@media (max-width: 1150px){
+    .benifit span:nth-child(1){
+        font-size: 30px;
+    }
+
+    .benifits{
+        gap: 28px;
+    }
+}
+
+@media (max-width: 1120px){
+    .benifit span:nth-child(2){
+        font-size: 12px;
+    }
+
+    .benifit span:nth-child(1){
+        margin-bottom: -7px;
+    }
+
+    .benifits{
+        display: grid;
+        grid-template-columns: 106px 55px 117px;
+        justify-items: center;
+        row-gap: 5px;
+        column-gap: 10px;
+
+
+    }
+
+    .benifits img:nth-child(2){
+        display: none;
+    }
+
+    .benifits img{
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+
+    .benifit:last-of-type{
+        grid-column: span 3;
+    }
+
+    .homeSection{
+        padding-bottom: 70px;
+    }
+
+}
+
+@media (max-width: 1110px) {
+    .welcome h1{
+        font-size: 36px;
+    }
+    .welcome p{
+        font-size: 14px;
+    }
+
+    .welcome {
+        width: 450px
+    }
+}
+
+@media (max-width : 1050px){
+    .welcome {
+        gap: 20px;
+    }
+
+    .benifit span:nth-child(1){
+        font-size: 24px;
+    }
+
+}
+
+@media (max-width: 1000px){
+    .welcome {
+        margin-left: 16px;
+        padding-top: 40px;
+
+    }
+
+    .benifits {
+        margin-left: 16px;
+    }
+
+    .bigStar{
+        right:400px ;
+    }
+}
+
+@media (max-width: 940px){
+
+    .smallStar{
+        right: 500px;
+    }
+    .bigStar{
+        right: 350px;
+    }
+
+    .homeSection{
+        background-position-x: -100px;
+    }
+
+}
+
+@media (max-width: 900px){
+    .bigStar{
+        display: none;
+    }
+
+    .smallStar{
+        display: none;
+    }
+}
+
+@media (max-width: 840px) {
+    .homeSection{
+        background-position-x: -200px;
+    }
+}
+
+@media (max-width: 700px){
+    .homeSection{
+        background-image: none;
+        background-color: #f2f0f1;
+    }
+    .homeBack{
+        display: block;
+        scale: 2;
+        margin-left: -300px;
+        margin-top: 160px;
+    }
+
+    .smallStar{
+        display: block;
+        top: 680px;
+        z-index: 3;
+    }
+
+    .bigStar{
+        display: block;
+        top: 500px;
+        z-index: 3;
+        right: 30px;
+    }
+}
+
+@media (max-width: 600px){
+    .homeBack{
+        margin-left: -250px;
+    }
+}
+@media (max-width: 580px){
+    .smallStar{
+        right: 400px;
+    }
+}
+
+@media (max-width: 530px) {
+    .homeBack{
+        margin-left: -200px;
+        margin-top: 130px;
+    }
+
+    .smallStar{
+        top: 600px;
+    }
+
+    .bigStar{
+        top: 450px;
+    }
+}
+
+
+
+
+@media (max-width: 480px){
+    .homeSection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .welcome{
+        width: 358px;
+        justify-content: center;
+        margin-left: 0;
+        
+    }
+
+    .benifits{
+        margin-left: 0;
+    }
+
+    .welcome button{
+        width: 100%;
+        
+    }
+
+    .homeBack{
+        margin-left: -450px;
+        margin-top: 160px;
+        scale: 2.5;
+    }
+
+    .smallStar{
+        right: 300px;
+    }
+}
+
+@media (max-width: 410px){
+    .bigStar{
+        right: 20px;
+        top: 500px;
+    }
+}
+
+.line{
+    width: 84%;
+    margin-inline: auto;
+    height: 1px;
+    border:none;
+    background-color: rgba(0, 0, 0, 0.105);
+    margin-block: 0;
+}
+
+.feedBackSection{
+    padding-block: 80px;
+    overflow-x: visible;
+}
+
+.feedBackSection h2{
+    font-family: "Integral";
+    padding-left: 100px;
+    font-size: 48px;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,85 @@
+.section{
+    padding: 72px 100px 64px;
+}
+
+.section h2{
+    font-size: 48px;
+    font-family: "Integral";
+    margin-bottom: 55px;
+    text-align: center;
+}
+
+.clothes {
+    width: max-content;
+    justify-self: center;
+    display: grid;
+    grid-template-columns: repeat(4, 295px);
+    gap: 30px;
+
+}
+
+
+.buttonContainer{
+    text-align: center;
+    margin-top: 30px;
+    
+    
+}
+.button{
+    background-color: transparent;
+    border: 1px solid rgba(0, 0, 0, 0.104);
+    font-size: 1rem;
+    color: black;
+    padding: 15px 80px;
+    border-radius: 62px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+    border-color: black;
+    transition: .3s;
+}
+
+@media (max-width: 1440px){
+    .clothes{
+        grid-template-columns: repeat(2, 295px);
+    }
+}
+
+@media (max-width: 720px)
+{
+    .section{
+        padding-inline: 20px;
+    }
+
+    .clothes {
+        grid-template-columns: repeat(2, 200px);
+    }
+    .section h2{
+        font-size: 32px;
+    }
+}
+
+
+@media (max-width: 500px){
+    .clothes {
+        grid-template-columns: 300px;
+    }
+
+    .buttonContainer{
+        padding-inline: 40px;
+
+    }
+
+    .button{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .section {
+        padding-block: 30px;
+    }
+}

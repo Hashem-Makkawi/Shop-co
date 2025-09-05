@@ -1,0 +1,21 @@
+.generalRating {
+    display: flex;
+    gap: 1rem;
+}
+
+.stars {
+    display: flex;
+    gap: 5px;
+}
+
+.stars img{
+    width: 18.5px;
+}
+
+.rating {
+    font-size: 14px;
+}
+
+.rating .five{
+    color: rgb(54, 54, 54);
+}

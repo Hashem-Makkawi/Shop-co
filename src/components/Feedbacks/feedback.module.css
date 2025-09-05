@@ -1,0 +1,103 @@
+.feedBack{
+    width: 400px;
+    height: 240px;
+    border: 1px solid #e6e6e6;
+    border-radius: 20px;
+    padding: 28px 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.stars {
+    display: flex;
+    gap: 6.5px;
+}
+
+.stars img{
+    width: 22px;
+}
+
+.userName {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.userName span{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.feedBack p{
+    color: rgba(0, 0, 0, 0.658);
+    font-size: 1rem;
+}
+
+.container{
+  width: 100vw; 
+  position: relative; 
+}
+
+.feedBacks {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-inline: 100px;
+
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+    position: absolute;
+    right: 0;
+    margin-right: 120px;
+    margin-top: -80px;
+
+}
+
+.buttons img:nth-child(2){
+    transform: scaleX(-1);
+}
+
+.buttons img{
+      padding: 10px;
+      cursor: pointer;
+      transition: .3s;
+}
+
+.buttons img:hover{
+    background-color: #e6e6e6;
+    border-radius: 50%;
+    transition: .3s;
+}
+
+.scrollContainer::-webkit-scrollbar{
+    display: none;
+}
+
+.container::before,
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100px;
+  z-index: 2;
+  pointer-events: none;
+  backdrop-filter:blur(.9px);
+}
+
+.container::before {
+  left: 0;
+  /* background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0)); */
+  
+}
+
+.container::after {
+  right: 0;
+  /* background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0)); */
+}
