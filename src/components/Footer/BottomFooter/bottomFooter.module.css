@@ -114,3 +114,43 @@ hr{
 .payments img{
     cursor: pointer;
 }
+
+@media (max-width: 1300px){
+    .gridContainer{
+        grid-template-columns: repeat(3, auto);
+        gap: 60px;
+    }
+
+    .footerComponent:nth-child(1){
+        grid-column: span 2;
+        width: 100%;
+    }
+
+    
+}
+
+@media(max-width: 830px){
+    .gridContainer{
+        grid-template-columns: repeat(2, auto);
+        gap: 40px;
+    }
+
+    .footerComponent:nth-child(1){
+        grid-column: span 2;
+        width: 100%;
+    }
+
+    .lastFooter{
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+        
+    }
+}
+
+@media (max-width: 550px){
+    
+    .payments img{
+        width: 60px;
+    }
+}

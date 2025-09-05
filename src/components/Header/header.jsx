@@ -27,12 +27,12 @@ const header = () => {
         <input placeholder='Search for products...' type="text" />
         <img src={search} alt="" />
       </div>
-      <span className={style.headerIcon}>
+      <div className={style.headerIcon}>
         <img className={style.searchIconMobile} src={searchMobile} alt="" />
         <Link><img src={cartIcon} alt="" /></Link>
         <Link><img src={profileIcon} alt="" /></Link>
-      </span>
-    </div>
+      </div>
+   </div>
   )
 }
 

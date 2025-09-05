@@ -77,3 +77,41 @@
     color: white;
     transition: .3s;
 }
+
+@media (max-width: 1300px){
+    .container{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .container h2{
+        width: 100%;
+        font-size: 32px;
+        
+    }
+
+    .form{
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media( max-width: 800px){
+    .container{
+        padding: 36px 20px;
+    }
+
+    .container h2{
+        font-size: 28px;
+    }
+
+    .form button{
+        font-size: 14px;
+    }
+
+    .form input{
+        font-size: 14px;
+    }
+}
+
