@@ -4,7 +4,6 @@ import Branding from "../../components/Brands/brands"
 import ClothesSection from '../../components/ClothesSection/clothesSection'
 import CategoriesSection from "../../components/CategorySection/category"
 import FeedBack from '../../components/Feedbacks/feedback'
-import Footer from '../../components/Footer/footer'
 
 import bigStarIcon from "../../assets/bigStar.svg"
 import Line from "../../assets/homeVerticalLine.svg"
@@ -119,7 +118,6 @@ const HomePage = () => {
         <h2 className={style.h2}>OUR HAPPY CUSTOMERS</h2>
         <FeedBack />
       </section>
-      <Footer />
     </>
   )
 }
