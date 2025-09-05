@@ -22,21 +22,21 @@ const category = () => {
           <h3>Formal</h3>
         </div>
 
-        
+
         <div className={style.category} onClick={() => {
           navigate("/category");
         }}>
           <h3>Party</h3>
         </div>
-        
 
-        
+
+
         <div className={style.category} onClick={() => {
           navigate("/category");
         }}>
           <h3>Gym</h3>
         </div>
-        
+
       </div>
     </div>
   )

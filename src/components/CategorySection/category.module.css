@@ -35,12 +35,14 @@
     background-repeat: no-repeat;
     background-color: white;
 }
+
 .category:nth-child(2){
     background-image: url("../../assets/categories/category2.svg");
     background-repeat: no-repeat;
     background-color: white;
     grid-column: span 2;
 }
+
 .category:nth-child(3){
     background-image: url("../../assets/categories/category3.svg");
     background-repeat: no-repeat;

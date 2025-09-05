@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import style from "./Home.module.css"
 import Benifit from "../../components/homeBenifit"
 import Branding from "../../components/Brands/brands"
 import ClothesSection from '../../components/ClothesSection/clothesSection'
@@ -6,11 +6,7 @@ import CategoriesSection from "../../components/CategorySection/category"
 import FeedBack from '../../components/Feedbacks/feedback'
 import Footer from '../../components/Footer/footer'
 
-import style from "./Home.module.css"
-
-import smallStarIcon from "../../assets/smallStar.svg"
 import bigStarIcon from "../../assets/bigStar.svg"
-import homeBackgroundImage from "../../assets/homeBackground.svg"
 import Line from "../../assets/homeVerticalLine.svg"
 import Url1 from "../../assets/products/product1.svg"
 import Url2 from "../../assets/products/product2.svg"
@@ -20,80 +16,80 @@ import Url5 from "../../assets/products/product5.svg"
 import Url6 from "../../assets/products/product6.svg"
 import Url7 from "../../assets/products/product7.svg"
 import Url8 from "../../assets/products/product8.svg"
+import smallStarIcon from "../../assets/smallStar.svg"
+import homeBackgroundImage from "../../assets/homeBackground.svg"
 
 
 
 const HomePage = () => {
 
-  let NewArrivals =[
-        {
-            url : Url1,
-            title : "T-shirt with Tape Details",
-            rating : 4.5,
-            price : 120,
-            discount : false
-        },
-        {
-            url : Url2,
-            title : "Skinny Fit Jeans",
-            rating : 3.5,
-            price : 260,
-            discount : true,
-            discountPercentage : 20
-        },
-        {
-            url : Url3,
-            title : "Checkered Shirt",
-            rating : 4.5,
-            price : 180,
-            discount : false
-        },
-        {
-            url : Url4,
-            title : "Sleeve Striped T-shirt",
-            rating : 4.5,
-            price : 160,
-            discount : true,
-            discountPercentage : 30
-        }
-    ]
+  let NewArrivals = [
+    {
+      url: Url1,
+      title: "T-shirt with Tape Details",
+      rating: 4.5,
+      price: 120,
+      discount: false
+    },
+    {
+      url: Url2,
+      title: "Skinny Fit Jeans",
+      rating: 3.5,
+      price: 260,
+      discount: true,
+      discountPercentage: 20
+    },
+    {
+      url: Url3,
+      title: "Checkered Shirt",
+      rating: 4.5,
+      price: 180,
+      discount: false
+    },
+    {
+      url: Url4,
+      title: "Sleeve Striped T-shirt",
+      rating: 4.5,
+      price: 160,
+      discount: true,
+      discountPercentage: 30
+    }
+  ]
 
-    let TopSelling = [
-        {
-            url : Url5,
-            title : "Vertical Striped Shirt",
-            rating : 5,
-            price : 232,
-            discount : true,
-            discountPercentage: 20
-        },
-        {
-            url : Url6,
-            title : "Courage Graphic T-shirt",
-            rating : 4,
-            price : 145,
-            discount: false
-        },
-        {
-            url : Url7,
-            title : "Loose Fit Bermunda Shorts",
-            rating : 3,
-            price : 80,
-            discount : false
-        },
-        {
-            url : Url8,
-            title : "Faded Skinny Jeans",
-            rating : 4.5,
-            price : 210,
-        }
-    ]
-
+  let TopSelling = [
+    {
+      url: Url5,
+      title: "Vertical Striped Shirt",
+      rating: 5,
+      price: 232,
+      discount: true,
+      discountPercentage: 20
+    },
+    {
+      url: Url6,
+      title: "Courage Graphic T-shirt",
+      rating: 4,
+      price: 145,
+      discount: false
+    },
+    {
+      url: Url7,
+      title: "Loose Fit Bermunda Shorts",
+      rating: 3,
+      price: 80,
+      discount: false
+    },
+    {
+      url: Url8,
+      title: "Faded Skinny Jeans",
+      rating: 4.5,
+      price: 210,
+    }
+  ]
 
   return (
     <>
       <section className={style.homeSection}>
-
         <div className={style.welcome}>
           <h1>
             FIND CLOTHES THAT MATCH YOUR STYLE
@@ -115,17 +111,14 @@ const HomePage = () => {
         <img className={style.homeBack} src={homeBackgroundImage} alt="" />
       </section>
       <Branding />
-      <ClothesSection Heading="NEW ARRIVALS" array={NewArrivals}/>
+      <ClothesSection Heading="NEW ARRIVALS" array={NewArrivals} />
       <hr className={style.line} />
-      <ClothesSection Heading="TOP SELLING" array={TopSelling}/>
+      <ClothesSection Heading="TOP SELLING" array={TopSelling} />
       <CategoriesSection />
-      
       <section className={style.feedBackSection}>
         <h2 className={style.h2}>OUR HAPPY CUSTOMERS</h2>
         <FeedBack />
       </section>
-      
-
       <Footer />
     </>
   )
