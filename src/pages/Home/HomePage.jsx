@@ -4,7 +4,7 @@ import Branding from "../../components/Brands/brands"
 import ClothesSection from '../../components/ClothesSection/clothesSection'
 import CategoriesSection from "../../components/CategorySection/category"
 import FeedBack from '../../components/Feedbacks/feedback'
-import Subscribe from '../../components/Footer/Subscribtion/subscription'
+import Footer from '../../components/Footer/footer'
 
 import style from "./Home.module.css"
 
@@ -121,12 +121,12 @@ const HomePage = () => {
       <CategoriesSection />
       
       <section className={style.feedBackSection}>
-        <h2>OUR HAPPY CUSTOMERS</h2>
+        <h2 className={style.h2}>OUR HAPPY CUSTOMERS</h2>
         <FeedBack />
       </section>
       
 
-      <Subscribe/>
+      <Footer />
     </>
   )
 }

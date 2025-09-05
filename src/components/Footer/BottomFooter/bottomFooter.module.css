@@ -1,0 +1,116 @@
+.gridContainer {
+    display: grid;
+    grid-template-columns:  repeat(5, auto);
+    gap: 120px;
+}
+
+.footerComponent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footerComponent:nth-child(1){
+    width: 250px;
+    gap: 27px;
+    margin-top: -17px;
+}
+
+.logo{
+    font-family: "Integral";
+    font-size: 34px !important;
+    color: black !important;
+    width: max-content;
+}
+
+.footerComponent p{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.667);
+}
+
+.socials{
+    font-size: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.socials i{
+    cursor: pointer;
+    background-color: white;
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid #cccccc;
+    transition: all 0.3s ease;
+}
+
+.socials i:hover{
+    color: white;
+    background-color: black;
+    border-color: black;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.heading{
+    font-size: 1rem;
+    color: black !important ; 
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+
+.footerComponent span{
+    color: rgba(0, 0, 0, 0.645);
+    font-weight: 400;
+    cursor: pointer;
+    width: max-content;
+    font-size: 1rem;
+    position: relative;
+}
+
+.footerComponent span::after{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 1px;
+    bottom: -2px;
+    left: 0;
+    transition: .3s;
+    background-color: rgba(0, 0, 0, 0.645);
+    border-radius: 2px;
+}
+
+.heading::after{
+    background-color: black !important;
+}
+
+.footerComponent span:hover::after{
+    width: 110%;
+    transition: .3s;
+}
+
+hr{
+    border: none;
+    height: 1px;
+    background-color: #d8d8d8;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.lastFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lastFooter span{
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.645);
+}
+
+.payments{
+    display: flex;
+}
+
+.payments img{
+    cursor: pointer;
+}

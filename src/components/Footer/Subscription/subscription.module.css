@@ -5,8 +5,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
+    margin-top: -230px;
+    margin-bottom: 50px;
 }
 
 .container h2{

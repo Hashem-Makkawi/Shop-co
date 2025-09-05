@@ -2,6 +2,12 @@ import React from 'react'
 
 import style from "./bottomFooter.module.css"
 
+import Visa from "../../../assets/PaymentMethods/visa.svg"
+import MasterCard from "../../../assets/PaymentMethods/mastercard.svg"
+import PayPal from "../../../assets/PaymentMethods/paypal.svg"
+import ApplePay from "../../../assets/PaymentMethods/applepay.svg"
+import GooglePay from "../../../assets/PaymentMethods/googlepay.svg"
+
 const BottomFooter = () => {
 
     const Component =({heading, first, second, third, fourth}) => {
@@ -24,9 +30,9 @@ const BottomFooter = () => {
                 <span className={style.logo}>SHOP.CO</span>
                 <p>We have clothes that suits your style and which you're proud to wear. From women to men</p>
                 <div className={style.socials}>
-                    <i class='bx bxl-instagram'></i>
-                    <i class='bx bxl-facebook' ></i>
                     <i class='bx bxl-twitter' ></i>
+                    <i class='bx bxl-facebook' ></i>
+                    <i class='bx bxl-instagram'></i>
                     <i class='bx bxl-github' ></i>
                 </div>
             </div>
@@ -59,6 +65,13 @@ const BottomFooter = () => {
 
         <div className={style.lastFooter}>
             <span>Shop.co &copy; 2000-2025, All Rights Reserved</span>
+            <div className={style.payments}>
+                <img src={Visa} alt="" />
+                <img src={MasterCard} alt="" />
+                <img src={PayPal} alt="" />
+                <img src={ApplePay} alt="" />
+                <img src={GooglePay} alt="" />
+            </div>
              
         </div>
       
