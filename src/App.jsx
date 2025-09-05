@@ -1,7 +1,6 @@
-import React from 'react'
 import {Route, RouterProvider, createBrowserRouter, createRoutesFromElements} from "react-router-dom"
 import RouteLayout from './Layouts/RouteLayout'
-import ProductDetailsPage from "./pages/ProductDetailPage"
+import ProductDetailsPage from "./pages/ProductDetails/ProductDetailPage"
 import HomePage from "./pages/Home/HomePage"
 import CartPage from "./pages/CartPage"
 import CategoryPage from "./pages/CategoryPage"
@@ -11,9 +10,9 @@ const App = () => {
     createRoutesFromElements(
       <Route path='/' element={<RouteLayout/>}>
         <Route index element={<HomePage/>}/>
-        <Route path='product_details' element={<ProductDetailsPage/>}/>
+        <Route path='productDetails' element={<ProductDetailsPage/>}/>
         <Route path='cart' element={<CartPage/>}/>
-        <Route path='category' element={<CategoryPage/>}/>
+        <Route path='categories' element={<CategoryPage/>}/>
       </Route>
     )
   )
