@@ -2,6 +2,11 @@
     padding: 72px 100px 64px;
 }
 
+.container{
+    display: flex;
+    justify-content: center;
+}
+
 .section h2{
     font-size: 48px;
     font-family: "Integral";
@@ -43,10 +48,11 @@
     transition: .3s;
 }
 
-@media (max-width: 1440px){
+@media (max-width: 1370px){
     .clothes{
         grid-template-columns: repeat(2, 295px);
     }
+
 }
 
 @media (max-width: 720px)

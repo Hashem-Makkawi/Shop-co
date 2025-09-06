@@ -1,0 +1,28 @@
+.swatch {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    border: 1px solid #d2d6db;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 black;
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.swatch:hover {
+    box-shadow: 0 0 0 2px black;
+}
+
+.swatches{
+    display: flex;
+    gap: 1rem;
+}
+
+.selected {
+    background-image: url("../../../assets/selected.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .1s;
+}

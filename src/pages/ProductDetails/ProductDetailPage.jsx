@@ -2,6 +2,7 @@ import React, { use } from 'react'
 import { useParams , useNavigate} from 'react-router-dom'
 import Products1 from "../../../public/NewArrivals.json"
 import Products2 from "../../../public/TopSelling.json"
+import ProductSection from '../../components/ProductSection/ProductSection'
 
 
 import style from "./productDetailPage.module.css"
@@ -23,7 +24,7 @@ const ProductDetailsPage = () => {
 
   return (
     <div>
-      <h1>THis is product details page</h1>
+      <ProductSection product={product}/>
     </div>
   )
 }

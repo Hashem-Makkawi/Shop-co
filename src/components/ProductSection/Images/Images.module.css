@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    gap: 14px;
+
+}
+
+.sideImages{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+}
+
+.sideImages img{
+    width: 150px;
+    height: 200px;
+    border-radius: 20px;
+    object-fit: cover;
+    cursor: pointer;
+    box-shadow: 0 0 0 0 black;
+    transition: box-shadow 0.3s ease;
+}
+
+.sideImages img:hover{
+  box-shadow: 0 0 0 2px black;
+
+}
+
+.focusedImage{
+    width: 450px;
+    height: calc(100% + 28);
+    border-radius: 20px;
+    object-fit: cover;
+
+}

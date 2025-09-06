@@ -5,6 +5,7 @@ import HomePage from "./pages/Home/HomePage"
 import CartPage from "./pages/CartPage"
 import CategoryPage from "./pages/CategoryPage"
 
+
 const App = () => {
   const router = createBrowserRouter(
     createRoutesFromElements(

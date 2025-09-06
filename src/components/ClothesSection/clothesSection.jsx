@@ -12,6 +12,7 @@ const ClothesSection = ({Heading, array}) => {
   return (
     <div className={style.section}>
       <h2>{Heading}</h2>
+      <div className={style.container}>
       <div className={style.clothes}>
         {array.map((piece, index) => {
             return (
@@ -27,6 +28,7 @@ const ClothesSection = ({Heading, array}) => {
                 </Link>
             )
         })}
+      </div>
       </div>
       <div className={style.buttonContainer}>
       <button className={style.button} >View All</button>
