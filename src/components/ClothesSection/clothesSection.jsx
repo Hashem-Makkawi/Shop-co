@@ -16,7 +16,8 @@ const ClothesSection = ({Heading, array}) => {
         {array.map((piece, index) => {
             return (
                 <Link>
-               < Piece url = {piece.url}
+               < Piece id = {piece.id}
+                       images = {piece.colors[0].images}
                        title={piece.title}
                        rating = {piece.rating}
                        price = {piece.price}

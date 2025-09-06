@@ -1,0 +1,114 @@
+[
+  {
+    "id": 1,
+    "title": "T-shirt with Back Graphic",
+    "rating": 4.5,
+    "price": 100,
+    "discount": true,
+    "discountPercentage": 20,
+    "colors": [
+      {
+        "color": "black",
+        "hex" : "#000000",
+        "images": [
+          "../src/assets/products/Product1/image1.png",
+          "../src/assets/products/Product1/image2.png",
+          "../src/assets/products/Product1/image3.png"
+        ]
+      },
+      {
+        "color": "orange",
+        "hex" : "#cd4e1e",
+        "images": [
+          "../src/assets/products/Product1/imageorange1.png",
+          "../src/assets/products/Product1/imageorange2.png",
+          "../src/assets/products/Product1/imageorange3.png"
+        ]
+      },
+      {
+        "color": "white",
+        "hex" : "#ffffff",
+        "images": [
+          "../src/assets/products/Product1/imagewhite1.png",
+          "../src/assets/products/Product1/imagewhite2.png",
+          "../src/assets/products/Product1/imagewhite3.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Oversized New York T-shirt",
+    "rating": 4.5,
+    "price": 80,
+    "discount": true,
+    "discountPercentage": 10,
+    "colors": [
+      {
+        "color": "brown",
+        "hex" : "#402d29",
+        "images": [
+          "../src/assets/products/Product2/image1.png",
+          "../src/assets/products/Product2/image2.png",
+          "../src/assets/products/Product2/image3.png"
+        ]
+      },
+      {
+        "color": "black",
+        "hex" : "#000000",
+        "images": [
+          "../src/assets/products/Product2/imageblack1.png",
+          "../src/assets/products/Product2/imageblack2.png",
+          "../src/assets/products/Product2/imageblack3.png"
+        ]
+      },
+      {
+        "color": "white",
+        "hex" : "#ffffff",
+        "images": [
+          "../src/assets/products/Product2/imagewhite1.png",
+          "../src/assets/products/Product2/imagewhite2.png",
+          "../src/assets/products/Product2/imagewhite3.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Casual Washed Skinny Jeans",
+    "rating": 4,
+    "price": 70,
+    "discount": false,
+    "colors": [
+      {
+        "color": "Blue",
+        "hex" : "#3a4e66",
+        "images": [
+          "../src/assets/products/Product3/image1.png",
+          "../src/assets/products/Product3/image2.png",
+          "../src/assets/products/Product3/image3.png"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Old Money Classy Shirt",
+    "rating": 4.5,
+    "price": 170,
+    "discount": true,
+    "discountPercentage": 15,
+    "colors": [
+      {
+        "color": "Brown",
+        "hex" : "#695a59",
+        "images": [
+          "../src/assets/products/Product4/image1.png",
+          "../src/assets/products/Product4/image2.png",
+          "../src/assets/products/Product4/image3.png",
+          "../src/assets/products/Product4/image4.png"
+        ]
+      }
+    ]
+  }
+]

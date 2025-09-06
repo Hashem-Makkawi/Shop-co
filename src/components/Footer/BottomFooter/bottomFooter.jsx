@@ -30,10 +30,10 @@ const BottomFooter = () => {
                 <span className={style.logo}>SHOP.CO</span>
                 <p>We have clothes that suits your style and which you're proud to wear. From women to men</p>
                 <div className={style.socials}>
-                    <i class='bx bxl-twitter' ></i>
-                    <i class='bx bxl-facebook' ></i>
-                    <i class='bx bxl-instagram'></i>
-                    <i class='bx bxl-github' ></i>
+                    <i className='bx bxl-twitter' ></i>
+                    <i className='bx bxl-facebook' ></i>
+                    <i className='bx bxl-instagram'></i>
+                    <i className='bx bxl-github' ></i>
                 </div>
             </div>
             <Component heading = "COMPANY"
