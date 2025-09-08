@@ -4,11 +4,11 @@ import style from "./stars.module.css"
 import yellowStar from "../../assets/yellowStar.svg"
 import grayStar from "../../assets/grayStar.svg"
 
-const stars = ({rating}) => {
+const stars = ({rating, size}) => {
   return (
-    <span className={style.generalRating}>
+    <span className={`${style.generalRating} ${style[size]}`}>
 
-        <div className={style.stars}>
+        <div className={`${style.stars} ${style[size]}`}>
 
         {Array.from({length : 5} , (_, index) => {
             return(
@@ -16,7 +16,7 @@ const stars = ({rating}) => {
             )
         })} 
         </div>
-        <span className={style.rating}>{rating}/<span className={style.five}>5</span></span>
+        <span className={`${style.rating} ${style[size]} `}>{rating}/<span className={style.five}>5</span></span>
     </span>
   )
 }

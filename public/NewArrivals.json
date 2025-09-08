@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "T-shirt with Back Graphic",
+    "title": "T shirt with Back Graphic",
     "description" : "Soft, breathable cotton t-shirt with a classic fit, durable stitching, versatile style, and all-day comfort for casual everyday wear.",
     "rating": 4.5,
     "price": 100,
@@ -39,7 +39,7 @@
   },
   {
     "id": 2,
-    "title": "Oversized New York T-shirt",
+    "title": "Oversized New York T shirt",
     "description" : "Soft, breathable cotton t-shirt with a classic fit, durable stitching, versatile style, and all-day comfort for casual everyday wear.",
     "rating": 4.5,
     "price": 80,

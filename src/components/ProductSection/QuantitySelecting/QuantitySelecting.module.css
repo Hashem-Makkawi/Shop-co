@@ -1,0 +1,60 @@
+.button {
+  padding: 20px 25px;
+  cursor: pointer;
+  transition: all .3s ease;
+  /* background-color: red; */
+}
+
+.button:nth-child(1) {
+  border-radius: 62px 0 0 62px;
+}
+
+.button:nth-child(3) {
+  border-radius: 0 62px 62px 0;
+}
+
+.buttons span{
+    width: 20px;
+    text-align: center;
+    display: block;
+}
+
+.button img {
+  width: 24px;
+  height: 24px;
+}
+
+.buttons {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+  background-color: #f0f0f0;
+  width: max-content;
+  border-radius: 62px;
+}
+
+.button:hover {
+  background-color: #e3e3e3;
+}
+
+.container{
+    display: flex;
+    gap: 20px;
+}
+
+.addToCart {
+    background-color: black;
+    border-radius: 62px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    padding-inline: 150px;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.addToCart:hover{
+    background-color: #f0f0f0;
+    color: black;
+
+}

@@ -1,6 +1,13 @@
 .generalRating {
     display: flex;
+    align-items: center;
+    /* align-items: flex-start; */
     gap: 1rem;
+    
+}
+
+.generalRating.large{
+    align-items: flex-start;
 }
 
 .stars {
@@ -14,8 +21,17 @@
 
 .rating {
     font-size: 14px;
+    display: block;
 }
 
 .rating .five{
     color: rgb(54, 54, 54);
+}
+
+.large img{
+    width: 25px;
+}
+
+span.large{
+    font-size: 1rem;
 }

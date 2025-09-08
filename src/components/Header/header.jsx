@@ -1,5 +1,7 @@
 import React from 'react'
 import {Link} from "react-router-dom"
+import { useContext } from 'react'
+import { CartContext } from '../../pages/Cart/cartProvider'
 
 import style from "./header.module.css"
 
@@ -9,13 +11,17 @@ import cartIcon from "../../assets/cart.svg"
 import profileIcon from "../../assets/profile.svg"
 import menu from "../../assets/burger.svg"
 import searchMobile from "../../assets/searchIconMobile.svg"
+import { useNavigate } from 'react-router-dom'
 
 const header = () => {
+  const { totalItems } = useContext(CartContext)
+
+  const navigate = useNavigate()
   return (
     <div className={style.header}>
       <div className={style.logoPart}>
         <img className={style.burgerMenu} src={menu} alt="" />
-        <span className={style.logo}>SHOP.CO</span>
+        <span onClick={() => navigate("/")} className={style.logo}>SHOP.CO</span>
       </div>
       <nav className={style.navbar}>
         <Link className={style.navLink}>Shop<img src={arrowdown} alt="" /></Link>
@@ -29,8 +35,9 @@ const header = () => {
       </div>
       <div className={style.headerIcon}>
         <img className={style.searchIconMobile} src={searchMobile} alt="" />
-        <Link><img src={cartIcon} alt="" /></Link>
-        <Link><img src={profileIcon} alt="" /></Link>
+        {totalItems > 0 && <span className={style.cartItems}>{totalItems}</span>}
+        <img onClick={() => navigate("/cart")} src={cartIcon} alt="" />
+        <img src={profileIcon} alt="" />
       </div>
    </div>
   )

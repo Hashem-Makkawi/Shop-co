@@ -26,3 +26,8 @@
     background-position: center;
     transition: .1s;
 }
+
+.title{
+    color: rgba(0, 0, 0, 0.668);
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,14 @@
+.container hr{
+    margin-block: 0;
+    width: 87%;
+    margin-inline: auto;
+}
+
+.container span{
+    color: rgba(0, 0, 0, 0.66);
+    font-size: 1rem;
+    display: block;
+    margin-left: 100px;
+    margin-top: 24px;
+    margin-bottom: 36px;
+}

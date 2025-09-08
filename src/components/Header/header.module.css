@@ -1,3 +1,20 @@
+.headerIcon{
+  position: relative;
+}
+
+.cartItems{
+  color: white;
+  background-color: black;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius:15px;
+  margin-right: -10px;
+  font-size: 13px;
+  position: absolute;
+  margin-left: 15px;
+  margin-top: -10px;
+}
 
 .header{
   display: flex;
@@ -10,6 +27,7 @@
   font-size: 2rem;
   font-family: "Integral";
   margin-top: -10px;
+  cursor: pointer;
 }
 
 .burgerMenu{
@@ -75,6 +93,10 @@
 .headerIcon{
   display: flex;
   gap: 14px;
+}
+
+.headerIcon img{
+    cursor: pointer;
 }
 .logoPart {
   display: flex;

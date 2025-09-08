@@ -1,32 +1,36 @@
-import React, { use } from 'react'
-import { useParams , useNavigate} from 'react-router-dom'
-import Products1 from "../../../public/NewArrivals.json"
-import Products2 from "../../../public/TopSelling.json"
-import ProductSection from '../../components/ProductSection/ProductSection'
+import React, { use } from "react";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
+import ProductSection from "../../components/ProductSection/ProductSection";
+import PageTitle from "../../components/PagesTitle/pagetitle";
 
-
-import style from "./productDetailPage.module.css"
+import style from "./productDetailPage.module.css";
 
 const ProductDetailsPage = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  const state = location.state;
 
-  const navigate = useNavigate()
+  console.log("state", state);
 
-  const {id} = useParams()
-  let product = Products1.find(item => item.id === parseInt(id)) || Products2.find(item => item.id === parseInt(id))
+  const product = location.state?.product;
 
-  if(!product){
-    return <div className={style.productNotFound}>
-      <h1>Product Not Found</h1>
-      <button onClick={() => navigate("/")}>Home</button>
-    </div>
+  console.log("aboos idik zbate ---", state);
+
+  if (!product) {
+    return (
+      <div className={style.productNotFound}>
+        <h1>Product Not Found</h1>
+        <button onClick={() => navigate("/")}>Home</button>
+      </div>
+    );
   }
-  
 
   return (
     <div>
-      <ProductSection product={product}/>
+      <PageTitle title="Product Details" />
+      <ProductSection product={product} />
     </div>
-  )
-}
+  );
+};
 
-export default ProductDetailsPage
+export default ProductDetailsPage;

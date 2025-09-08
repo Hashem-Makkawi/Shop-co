@@ -1,0 +1,267 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.section .hr{
+    width: 87%;
+    margin-inline: auto;
+}
+
+.section {
+    margin-bottom: 200px;
+}
+
+.section hr{
+    margin-top: 0;
+}
+
+.title{
+    margin-left: 100px;
+    font-size: 40px;
+    font-family: "Integral";
+    margin-bottom: 24px;
+}
+
+.empty{
+    background-color: #f0f0f0;
+    color: #cdcdcd;
+    display: flex;
+    align-items: center;
+    padding: 50px;
+    font-size: 30px;
+    border-radius: 60px;
+    gap: 10px;
+    width: max-content;
+    margin-inline: auto;
+    margin-bottom: 200px;
+}
+
+.empty img{
+    width: 40px;
+}
+
+.itemImage {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.itemInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.itemList{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+    gap: 30px;
+    padding: 20px 25px;
+    border-radius: 20px;
+    border: 1px solid #e6e6e6;
+    height: max-content;
+
+}
+
+.item{
+    display: flex;
+    width: 667px;
+    justify-content: space-between;
+    position: relative;
+    /* height: max-content; */
+    /* margin-bottom: 24px; */
+}
+
+.leftPart{
+    display: flex;
+    gap: 1rem;
+}
+
+.itemTitle {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.button {
+  padding: 10px 10px;
+  cursor: pointer;
+  transition: all .3s ease;
+  /* background-color: red; */
+}
+
+.button:nth-child(1) {
+  border-radius: 62px 0 0 62px;
+}
+
+.button:nth-child(3) {
+  border-radius: 0 62px 62px 0;
+}
+
+.quantityBtns span{
+    width: 20px;
+    text-align: center;
+    display: block;
+}
+
+.button img{
+  width: 15px;
+  height: 15px;
+}
+
+.quantityBtns {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background-color: #f0f0f0;
+  width: max-content;
+  border-radius: 62px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.button:hover {
+  background-color: #e3e3e3;
+}
+
+.delete{
+    width: 18px;
+    justify-self: right;
+    align-self: right;
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.line{
+    margin: 0;
+    height: 1px;
+    border: none;
+    background-color: #e6e6e6;
+}
+
+.itemInfo:nth-child(2){
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.itemInfo:nth-child(1){
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.itemsSection{
+    display: flex;
+    gap: 20px;
+}
+
+.checkOut{
+        display: flex;
+    flex-direction: column;
+    width: max-content;
+    gap: 30px;
+    padding: 20px 25px;
+    border-radius: 20px;
+    border: 1px solid #e6e6e6;
+    width: 505px;
+}
+
+.totalTitle{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.totalContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.totalContainer span:nth-child(1){
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.totalContainer:nth-child(3){
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.checkOutLine{
+    margin: 0;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.form{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+}
+
+.form input{
+    padding: 12px 30px 14px 52px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 62px;
+    outline: none;
+    font-size: 1rem;
+    width: 320px;
+}
+
+.form img{
+    position: absolute;
+    left: 19px;
+    top: 14px;
+}
+
+.form button{
+    padding: 13px 38.5px;
+    border-radius: 62px;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.form button:hover{
+    background-color: white;
+    color: black;
+}
+
+.checkOutBtn{
+    padding: 19px 153px;
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: black;
+    color: white;
+    gap: 1rem;
+    border-radius: 62px;
+    font-size: 1rem;
+    transition: all .3s ease;
+    cursor: pointer;
+
+}
+
+.checkOutBtn img{
+        transition: all .3s ease;
+}
+
+.checkOutBtn:hover img{
+    transform: translateX(100px);
+}
+
+.delete:hover{
+      filter: drop-shadow(0 4px 8px rgb(255, 132, 132));
+}
