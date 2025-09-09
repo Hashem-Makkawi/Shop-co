@@ -265,3 +265,118 @@
 .delete:hover{
       filter: drop-shadow(0 4px 8px rgb(255, 132, 132));
 }
+
+@media (max-width: 1280px){
+    .item {
+        width: 450px;
+    }
+
+    .checkOut{
+        width:350px ;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .form input{
+        width: 200px;
+    }
+
+    .form button{
+        padding-inline: 30px;
+    }
+
+    .buttons{
+        width: 100%;
+    }
+
+    .checkOutBtn{
+        padding-inline: 40px;
+    }
+}
+
+@media (max-width: 910px){
+    .item{
+        width: 350px;
+    }
+
+    .itemTitle{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 800px){
+    .title{
+        margin-inline: 0;
+        text-align: center;
+    }
+
+    .itemsSection{
+        width: 100%;
+        padding-inline: 50px;
+        flex-direction: column-reverse;
+    }
+
+    .item {
+        width: 100%;
+    }
+
+    .itemList{
+        width: 100%;
+    }
+
+    .itemTitle{
+        font-size: 1rem;
+        
+    }
+
+    .checkOut{
+        width: 100%;
+    }
+
+    .form input{
+        width: 60%;
+    }
+
+    .form button{
+        padding-inline: 40px;
+    }
+
+    .checkOutBtn{
+        padding-inline: auto;
+    }
+
+    .checkOutBtn:hover img{
+        transform: translateX(360px);
+    }
+}
+
+@media (max-width: 550px){
+    .itemTitle{
+        width: 150px;
+    }
+
+    .itemsSection{
+        padding-inline: 1rem;
+    }
+}
+
+@media(max-width: 450px){
+    .itemImage{
+        width: 80px;
+        height: 80px;
+    }
+
+    .itemInfo:nth-child(2){
+        font-size: 13px;
+    }
+
+    .itemTitle{
+        font-size: 13px;
+    }
+
+    .form button{
+        padding-inline: 30px;
+    }
+}

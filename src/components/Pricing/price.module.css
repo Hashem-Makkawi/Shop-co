@@ -54,3 +54,9 @@
     font-size: 32px;
     margin-block: 10px;
 }
+
+@media(max-width: 1200px){
+    .large {
+        font-size: 25px;
+    }
+}

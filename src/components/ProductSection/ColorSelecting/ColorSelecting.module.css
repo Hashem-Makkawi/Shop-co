@@ -31,3 +31,9 @@
     color: rgba(0, 0, 0, 0.668);
     margin-bottom: 1rem;
 }
+
+@media (max-width: 1500px){
+    .title {
+        margin-bottom: 5px;
+    }
+}

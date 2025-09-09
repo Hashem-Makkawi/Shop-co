@@ -157,3 +157,9 @@
     margin-block: 20px;
   }
 }
+
+@media (max-width: 600px){
+  .cartItems {
+    margin-left: 50px;
+  }
+}

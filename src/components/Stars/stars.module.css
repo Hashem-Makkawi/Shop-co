@@ -35,3 +35,13 @@
 span.large{
     font-size: 1rem;
 }
+
+@media (max-width: 1200px){
+    .large img{
+        width: 20px;
+    }
+
+    span.large{
+        font-size: 13px;
+    }
+}

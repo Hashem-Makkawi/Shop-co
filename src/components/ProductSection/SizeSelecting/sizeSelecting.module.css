@@ -35,3 +35,28 @@
     margin-bottom: 1rem;
 
 }
+@media (max-width: 1500px){
+    .container{
+        margin-top: 20px;
+    }
+
+    .container .title {
+        margin-bottom: 5px;
+    }
+}
+
+@media (max-width: 950px){
+    .button{
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 450px){
+    .buttons{
+        gap: 5px;
+    }
+
+    .button{
+        padding: 12px 14px;
+    }
+}

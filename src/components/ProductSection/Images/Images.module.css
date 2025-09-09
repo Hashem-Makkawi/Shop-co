@@ -34,3 +34,67 @@
     object-fit: cover;
 
 }
+@media (max-width: 1500px){
+    .sideImages img{
+        width: 100px;
+        height: 150px;
+    }
+    .focusedImage{
+        width: 400px;
+        height: 477px;
+    }
+}
+
+@media (max-width: 1000px){
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .sideImages{
+        flex-direction: row;
+    }
+
+    .sideImages img{
+        width: 120px;
+    }
+
+    
+}
+
+@media (max-width: 810px){
+    .focusedImage{
+        width: 350px;
+        height: 350px;
+    }
+
+    .container{
+        flex-direction: row-reverse;
+        gap: 15px;
+    }
+
+    .sideImages{
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .sideImages img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 400px){
+    .focusedImage{
+        width: 300px;
+        height: 300px;
+    }
+
+    .sideImages img{
+        height: 90px;
+        width: 90px;
+    }
+
+    .sideImages{
+        gap: 15px;
+    }
+}

@@ -2,6 +2,7 @@ import React, { use } from "react";
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import ProductSection from "../../components/ProductSection/ProductSection";
 import PageTitle from "../../components/PagesTitle/pagetitle";
+import Reviews from "../../components/ReviewsAndDetails/reviewSection"
 
 import style from "./productDetailPage.module.css";
 
@@ -29,6 +30,7 @@ const ProductDetailsPage = () => {
     <div>
       <PageTitle title="Product Details" />
       <ProductSection product={product} />
+      <Reviews />
     </div>
   );
 };
